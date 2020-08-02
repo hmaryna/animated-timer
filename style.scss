@@ -1,0 +1,92 @@
+body {
+   background: #d7d7d7;
+   color: white;
+}
+
+/*=================
+* TIMER
+*=================*/
+
+.timer {
+   color: white;
+   
+   * { cursor: default; margin: 0; padding: 0;}
+
+   h3 {
+      width: 100%;
+      font-size: 26px;
+      letter-spacing: 4px;
+      text-align: center;
+   }
+
+   &--clock {
+      width: 100%;
+      position: relative;
+      padding-left: 6px;
+      margin-top: 22px;;
+      overflow: hidden;
+
+      .clock-display-grp {
+         position: relative;
+         display: inline-flex;
+         margin-right: 30px;
+         padding-bottom: 30px;
+
+         .group-title {
+            position: absolute;
+            top: auto;
+            bottom: 0;
+            text-align: center;
+            font-size: 14px;
+            width: 100%;
+         }
+
+         .number-grp {
+            width: auto;
+            display: block;
+            height: 156px;
+            float: left;
+            overflow: hidden;
+
+            .number-grp-wrp {
+               width: 100%;
+               position: relative;
+
+               .num {
+                  width: 100%;
+                  position: relative;
+                  height: 156px;
+
+                  p {
+                     width: auto;
+                     display: table;
+                     font-size: 205px;
+                     line-height: 150px; //180
+                     font-weight: bold;
+                  }
+
+               }
+
+            }
+
+         }
+      }
+
+      .clock-separator {
+         width: auto;
+         float: left;
+         display: block;
+         height: 156px;
+
+         p {
+            width: auto;
+            display: table;
+            font-size: 205px;
+            line-height: 150px; //180
+            font-weight: bold;
+         }
+
+      }
+
+   }
+}
